@@ -7,9 +7,6 @@
 jQuery(document).ready(function($) {
 
 	"use strict";
-
-	
-
 	var siteMenuClone = function() {
 
 		$('.js-clone-nav').each(function() {
@@ -185,13 +182,13 @@ jQuery(document).ready(function($) {
 
 	var siteCountDown = function() {
 
-		$('#date-countdown').countdown('2020/10/10', function(event) {
+		$('#date-countdown').countdown('2020/4/30', function(event) {
 		  var $this = $(this).html(event.strftime(''
-		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+		    + '<span class="countdown-block"><span class="label">%w</span> tuần </span>'
+		    + '<span class="countdown-block"><span class="label">%d</span> ngày </span>'
+		    + '<span class="countdown-block"><span class="label">%H</span> giờ </span>'
+		    + '<span class="countdown-block"><span class="label">%M</span> phút </span>'
+		    + '<span class="countdown-block"><span class="label">%S</span> giây</span>'));
 		});
 				
 	};

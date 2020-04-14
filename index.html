@@ -1,33 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Selling &mdash; Website by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<head>
+  <title>Tinh Chất Nghệ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      -webkit-animation-name: fadeIn;
+      /* Fade in the background */
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s
+    }
   
+    /* Modal Content */
+    .modal-content {
+      position: fixed;
+      bottom: 0;
+      background-color: #fefefe;
+      width: 100%;
+      -webkit-animation-name: slideIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slideIn;
+      animation-duration: 0.4s
+    }
+  
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+    }
+  
+    .modal-body {
+      padding: 2px 16px;
+    }
+  
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+    }
+  
+    /* Add Animation */
+    @-webkit-keyframes slideIn {
+      from {
+        bottom: -300px;
+        opacity: 0
+      }
+  
+      to {
+        bottom: 0;
+        opacity: 1
+      }
+    }
+  
+    @keyframes slideIn {
+      from {
+        bottom: -300px;
+        opacity: 0
+      }
+  
+      to {
+        bottom: 0;
+        opacity: 1
+      }
+    }
+  
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+  
+      to {
+        opacity: 1
+      }
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+  
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -38,266 +156,117 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
+
     <div class="top-bar py-3 bg-light" id="home-section">
       <div class="container">
         <div class="row align-items-center">
-         
+
           <div class="col-6 text-left">
             <ul class="social-media">
               <li><a href="#" class=""><span class="icon-facebook"></span></a></li>
-              <li><a href="#" class=""><span class="icon-twitter"></span></a></li>
+              <!-- <li><a href="#" class=""><span class="icon-twitter"></span></a></li>
               <li><a href="#" class=""><span class="icon-instagram"></span></a></li>
-              <li><a href="#" class=""><span class="icon-linkedin"></span></a></li>
+              <li><a href="#" class=""><span class="icon-linkedin"></span></a></li> -->
             </ul>
           </div>
           <div class="col-6">
             <p class="mb-0 float-right">
-              <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">(+1) 234 5678 9101</span></a></span>
-              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span class="d-none d-lg-inline-block text-black">shop@yourdomain.com</span></a></span>
+              <span class="mr-3"><a href="tel://#"> <span class="icon-phone mr-2"
+                    style="position: relative; top: 2px;"></span><span
+                    class="d-none d-lg-inline-block text-black">0374363224</span></a></span>
+              <span><a href="#"><span class="icon-envelope mr-2" style="position: relative; top: 2px;"></span><span
+                    class="d-none d-lg-inline-block text-black">tranhang261092@gmail.com</span></a></span>
             </p>
-            
+
           </div>
         </div>
-      </div> 
+      </div>
     </div>
 
     <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
         <div class="row align-items-center">
-          
+
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black mb-0">Selling<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black mb-0">Shop Mẹ <span
+                  class="text-primary">Kenz</span> </a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#products-section" class="nav-link">Products</a></li>
-                <li><a href="#about-section" class="nav-link">About Us</a></li>
-                <li><a href="#special-section" class="nav-link">Special</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="#blog-section" class="nav-link">Blog</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="#home-section" class="nav-link">Trang Chủ</a></li>
+                <li><a href="#products-section" class="nav-link">Sản Phẩm</a></li>
+                <!-- <li><a href="#about-section" class="nav-link">Chúng Tôi</a></li> -->
+                <!-- <li><a href="#special-section" class="nav-link">Khuyến Mãi</a></li> -->
+                <li><a href="#blog-section" class="nav-link">Chứng Nhận</a></li>
+                <!-- <li><a href="#testimonials-section" class="nav-link">Nhận Xét</a></li> -->
+                <li><a href="#contact-section" class="nav-link">Đặt Hàng</a></li>
               </ul>
             </nav>
           </div>
 
 
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
 
         </div>
       </div>
-      
+
     </header>
 
-  
-     
-    <div class="site-blocks-cover overlay" style="background-image: url(images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-
-          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
-                        
-            <div class="row mb-4">
-              <div class="col-md-7">
-                <h1>Shop With Us</h1>
-                <p class="mb-5 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
-                <div>
-                  <a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop Now</a>
-                  <a href="#" class="btn btn-white py-3 px-5 rounded-0 d-block d-sm-inline-block">Club Membership</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
 
 
-    
-    <div class="site-section" id="products-section">
+    <div class="site-blocks-cover" style="background-image: url(images/img-slide.jpg);" data-aos="fade">
+    </div>
+
+    <div class="site-section bg-light" id="products-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-6 text-center">
-            <h3 class="section-sub-title">Popular Products</h3>
-            <h2 class="section-title mb-3">Our Products</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/model_1_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/model_2_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist active"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/model_3_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/model_4_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/model_5_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div class="product-item">
-              <figure>
-                <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="px-4">
-                <h3><a href="#">Wild West Hoodie</a></h3>
-                <div class="mb-3">
-                  <span class="meta-icons mr-3"><a href="#" class="mr-2"><span class="icon-star text-warning"></span></a> 5.0</span>
-                  <span class="meta-icons wishlist"><a href="#" class="mr-2"><span class="icon-heart"></span></a> 29</span>
-                </div>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <div>
-                  <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
-                  <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-    
-    <div class="site-blocks-cover inner-page-cover overlay get-notification"  style="background-image: url(images/hero_2.jpg); background-attachment: fixed;" data-aos="fade">
-      <div class="container">
-
-        <div class="row align-items-center justify-content-center">
-          <form class="col-md-7" method="post">
-            <h2>Get notified on each updates.</h2>
-            <div class="d-flex mb-4">
-              <input type="text" class="form-control rounded-0" placeholder="Enter your email address">
-              <input type="submit" class="btn btn-white btn-outline-white rounded-0" value="Subscribe">
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat commodi veniam doloremque ducimus tempora.</p>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-6 text-center">
-            <h3 class="section-sub-title">Awesome Products</h3>
-            <h2 class="section-title mb-3">Featured Products</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+            <h3 class="section-sub-title">Tinh Chất Nghệ Thiên Nhiên</h3>
+            <h2 class="section-title mb-3">Nguồn Gốc - Xuất Xứ</h2>
+            <p>Tính chất nghệ thiên nhiên Sargarmin được nghiên cứu và phát triển tại Trung Tâm nghiên cứu và phát triển
+              sản phẩm thiên
+              nhiên, Viện Hóa học các Hợp chất thiên nhiên, Viện Hàn lâm Khoa học và Công nghệ Việt Nam</p>
           </div>
         </div>
         <div class="bg-white py-4 mb-4">
           <div class="row mx-4 my-4 product-item-2 align-items-start">
             <div class="col-md-6 mb-5 mb-md-0">
-              <img src="images/model_1_bg.jpg" alt="Image" class="img-fluid">
+              <img src="images/product1.jpg" alt="Image" class="img-fluid">
             </div>
-           
+
             <div class="col-md-5 ml-auto product-title-wrap">
               <span class="number">01.</span>
-              <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
-              <p class="mb-4">Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
-              
-              <div class="mb-4"> 
-                <h3 class="text-black font-weight-bold h5">Price:</h3>
-                <div class="price"><del class="mr-2">$269.00</del> $69.00</div>
+              <h3 class="text-black mb-4 font-weight-bold">Về Sản Phẩm</h3>
+              <b>Thành phần:</b><br />
+              <p class="mb-4">Được quy hoạch và trồng tại nông trường Thạch Quảng, Thạch Thành, Thanh Hóa với địa hình
+                và thổ nhưỡng thích hợp nên
+                nguyên liệu có chất lượng curcuminoids rất cao và ổn định <br />
+                Curcumin (>96%) từ củ nghệ vàng, piperine hoạt chất được tinh chiết từ hồ tiêu, sodium alginate được
+                tinh chiết từ rong
+                nâu và tinh bột.</p>
+              <p>
+                <b>Tinh chất nghệ thiên nhiên Sargamin đặc biệt tốt cho:</b><br />
+                - Người đau dạ dày, đại tràng, ...<br />
+                - Phụ nữ sau sinh làm đẹp và phục hồi tử cung<br />
+                - Chị em phụ nữ làm đẹp: Một thìa tinh bột nghệ Sargamin mỗi sáng, đảm bảo mặt không còn mụn<br />
+                - Hỗ trợ điều trị cho người bị ung thư<br />
+                - Tăng cường oxy hóa, trung hòa các gốc tự do, hỗ trợ các liều pháp điều trị viêm nhiễm tiềm ẩn, mạn
+                tính và ức
+                chế hình thành phát triển khối u.<br />
+              </p>
+
+              <div class="mb-4">
+                <h3 class="text-black font-weight-bold h5">Giá Niêm Yết:</h3>
+                <div class="price">275.000 VND / 1 Lọ</div>
               </div>
               <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
-                <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
+                <a href="#contact-section"
+                  class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Đặt Hàng</a>
               </p>
             </div>
           </div>
@@ -306,22 +275,28 @@
         <div class="bg-white py-4">
           <div class="row mx-4 my-4 product-item-2 align-items-start">
             <div class="col-md-6 mb-5 mb-md-0 order-1 order-md-2">
-              <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
+              <img src="images/product2.jpg" alt="Image" class="img-fluid">
             </div>
-           
+
             <div class="col-md-5 mr-auto product-title-wrap order-2 order-md-1">
               <span class="number">02.</span>
-              <h3 class="text-black mb-4 font-weight-bold">About This Product</h3>
-              <p class="mb-4">Et tempora id nostrum saepe amet doloribus deserunt totam officiis cupiditate asperiores quasi accusantium voluptatum dolorem quae sapiente voluptatem ratione odio iure blanditiis earum fuga molestiae alias dicta perferendis inventore!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus soluta assumenda sed optio, error at?</p>
-              
-              <div class="mb-4"> 
-                <h3 class="text-black font-weight-bold h5">Price:</h3>
-                <div class="price"><del class="mr-2">$269.00</del> $69.00</div>
+              <h3 class="text-black mb-4 font-weight-bold">Cách sử dụng</h3>
+              <p class="mb-4">- Sử dụng 1-2 lần/ngày, trước khi ăn 30 phút hoặc 2-3h sau khi ăn. Sử dụng tốt nhất vào
+                buổi sáng, hạn chế sử dụng vào
+                buổi tối và trước khi đi ngủ.<br />
+                Mỗi lần sử dụng 1 thìa cafe, hòa tan với nước nóng già (>80 độ C), khuấy kỹ cho đều rồi thêm nước lạnh
+                vừa đủ dùng, có
+                thể thêm đường hoặc mật ong để tạo vị dễ sử dụng hơn
+              </p>
+              <p>- Đắp mặt 3 lần/tuần với chị em phụ nữ</p>
+
+              <div class="mb-4">
+                <h3 class="text-black font-weight-bold h5">Giá Niêm Yết:</h3>
+                <div class="price">275.000 VND / 1 Lọ</div>
               </div>
               <p>
-                <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
-                <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
+                <a href="#contact-section"
+                  class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">Đặt Hàng</a>
               </p>
             </div>
           </div>
@@ -330,171 +305,73 @@
       </div>
     </div>
 
-
-    <div class="site-section" id="about-section">
-      <div class="container">
-        <div class="row align-items-lg-center">
-          <div class="col-md-8 mb-5 mb-lg-0 position-relative">
-            <img src="images/about_1.jpg" class="img-fluid" alt="Image">
-            <div class="experience">
-              <span class="year">Trusted Merchant</span>
-              <span class="caption">for 50 years</span>
-            </div>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <h3 class="section-sub-title">Merchant Company</h3>
-            <h2 class="section-title mb-3">About Us</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
-            <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="site-section border-bottom" id="team-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">Team</h3>
-            <h2 class="section-title mb-3">Leadership</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-            <div class="person text-center">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
-              <h3>John Rooster</h3>
-              <p class="position text-muted">Co-Founder, President</p>
-              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-            <div class="person text-center">
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
-              <h3>Tom Sharp</h3>
-              <p class="position text-muted">Co-Founder, COO</p>
-              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-            <div class="person text-center">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded w-75 mb-3">
-              <h3>Winston Hodson</h3>
-              <p class="position text-muted">Marketing</p>
-              <p class="mb-4">Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
-              <ul class="ul-social-circle">
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
+    <!-- <div class="site-blocks-cover overlay get-notification" id="special-section" style="background-image: url(images/img-slide.jpg); background-attachment: fixed; background-position: top;" data-aos="fade">
       <div class="container">
 
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
-            <h3 class="section-sub-title">Special Promo</h3>
-            <h3 class="section-title text-white mb-4">Summer Sale</h3>
-            <p class="mb-5 lead">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+            <h3 class="section-sub-title">Đặc Biệt</h3>
+            <h3 class="section-title text-white mb-4">Khuyến Mãi Tháng 4</h3>
+            <p class="mb-5 lead">
+              Miễn phí vận chuyển Hà Nội khi mua 2 lọ </br>
+              Miễn phí vận chuyển Toàn Quốc khi mua 3 lọ trở lên
+            </p>
             
             <div id="date-countdown" class="mb-5"></div>
 
-            <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop Now</a></p>
+            <p><a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Mua Ngay</a></p>
           </div>
         </div>
 
       </div>
-    </div>
+    </div> -->
 
-    <div class="site-section bg-light" id="services-section">
+
+
+
+    <div class="site-section" id="blog-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h3 class="section-sub-title">Our Services</h3>
-            <h2 class="section-title mb-3">We Offer Services</h2>
+            <h3 class="section-sub-title">Chứng nhận</h3>
+            <h2 class="section-title mb-3">Giấy Chứng Nhận</h2>
           </div>
         </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-pie_chart"></span></div>
-              <div>
-                <h3>Business Consulting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-backspace"></span></div>
-              <div>
-                <h3>Market Analysis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-av_timer"></span></div>
-              <div>
-                <h3>User Monitoring</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
 
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-beenhere"></span></div>
-              <div>
-                <h3>Seller Consulting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/c1.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#" class="text-black">Giải thưởng sản phẩm vàng vì sức khoẻ cộng
+                  đồng năm 2016</a></h2>
+              <p>Là giải thưởng thường niên của Hiệp hội Thực phẩm chức năng Việt Nam, “Sản phẩm vàng vì sức khỏe cộng
+                đồng” nhằm tôn
+                vinh các sản phẩm sức khỏe, thực phẩm chức năng, sản phẩm làm đẹp có chất lượng cao, an toàn và hiệu quả
+                phục vụ cho
+                chăm sóc, bảo vệ, tăng cường sức khỏe cộng đồng và giảm thiểu nguy cơ bệnh tật.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-business_center"></span></div>
-              <div>
-                <h3>Financial Investment</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/c2.png" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#" class="text-black">Xác nhận công bố phù hợp quy định an toàn
+                  thực phẩm</a></h2>
+              <p>Sản phẩm thuộc nhóm Thực phẩm bảo vệ sức khoẻ do Sản xuất tại Viện Hoá Học các Hợp Chất thiên nhiên -
+                Viện Hàm Lâm Khoa Học và Công Nghệ
+                Việt Nam.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="unit-4 d-flex">
-              <div class="unit-4-icon mr-4"><span class="text-primary icon-cloud_done"></span></div>
-              <div>
-                <h3>Financial Management</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="images/c3.jpg" alt="Image" class="img-fluid">
+              <h2 class="font-size-regular"><a href="#" class="text-black">Viện Hóa học các Hợp chất thiên nhiên thuộc
+                  Viện Khoa học và Công nghệ Việt Nam</a></h2>
+              <p>Trong 40 năm, Viện Hoá học các Hợp chất thiên nhiên đã trải qua nhiều thời kỳ xây dựng và phát triển.Đã
+                công bố hàng trăm bài báo trên các tạp chí khoa học uy tín quốc tế và trong nước, xuất bản hàng chục
+                sách chuyên
+                khảo, giáo trình. Nghiên cứu và sản xuất nhiều chế phẩm đưa vào ứng dụng trong thực tiễn. Trong đó có
+                sản phẩm Tinh Chất Nghệ Thiên Nhiên Sargamin</p>
             </div>
           </div>
 
@@ -502,196 +379,161 @@
       </div>
     </div>
 
-    <div class="site-section testimonial-wrap" id="testimonials-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">People Says</h3>
-            <h2 class="section-title mb-3">Testimonials</h2>
+    <!-- <div class="site-section testimonial-wrap" id="testimonials-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h3 class="section-sub-title">Mọi Người Nói Về Sản Phẩm</h3>
+              <h2 class="section-title mb-3">Nhận Xét</h2>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="slide-one-item home-slider owl-carousel">
+        <div class="slide-one-item home-slider owl-carousel">
           <div>
             <div class="testimonial">
               <figure class="mb-4 d-block align-items-center justify-content-center">
                 <div><img src="images/person_3.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
               </figure>
               <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                  quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                  dolores excepturi earum unde iusto.&rdquo;</p>
               </blockquote>
               <p class="text-black"><strong>John Smith</strong></p>
-
-              
+      
+      
             </div>
           </div>
           <div>
             <div class="testimonial">
-              
+      
               <figure class="mb-4 d-block align-items-center justify-content-center">
                 <div><img src="images/person_2.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
               </figure>
-
+      
               <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                  quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                  dolores excepturi earum unde iusto.&rdquo;</p>
               </blockquote>
-              
+      
               <p class="text-black"><strong>Robert Aguilar</strong></p>
-              
-              
+      
+      
             </div>
           </div>
-
+      
           <div>
             <div class="testimonial">
               <figure class="mb-4 d-block align-items-center justify-content-center">
                 <div><img src="images/person_4.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
               </figure>
               <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                  quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                  dolores excepturi earum unde iusto.&rdquo;</p>
               </blockquote>
               <p class="text-black"><strong>Roger Spears</strong></p>
-
-              
+      
+      
             </div>
-           
+      
           </div>
-
+      
           <div>
             <div class="testimonial">
               <figure class="mb-4 d-block align-items-center justify-content-center">
                 <div><img src="images/person_1.jpg" alt="Image" class="w-100 img-fluid mb-3"></div>
               </figure>
               <blockquote class="mb-3">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                  quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                  dolores excepturi earum unde iusto.&rdquo;</p>
               </blockquote>
               <p class="text-black"><strong>Kyle McDonald</strong></p>
-
-              
+      
+      
             </div>
-
+      
           </div>
-
+      
         </div>
-    </div>
+      </div> -->
 
-    
-
-    <div class="site-section" id="blog-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h3 class="section-sub-title">Blog</h3>
-            <h2 class="section-title mb-3">Blog Posts</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/model_1_bg.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-              <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/product_1_bg.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <div class="h-entry">
-              <img src="images/model_5_bg.jpg" alt="Image" class="img-fluid">
-              <h2 class="font-size-regular"><a href="#" class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div> 
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-   
 
 
     <div class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h3 class="section-sub-title">Contact Form</h3>
-            <h2 class="section-title mb-3">Get In Touch</h2>
+            <h3 class="section-sub-title">Thanh Toán</h3>
+            <h2 class="section-title mb-3">Thông Tin Thanh Toán</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-7 mb-5">
 
-            
 
-            <form action="#" class="p-5 bg-white">
-              
-              <h2 class="h4 text-black mb-5">Contact Form</h2> 
 
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control rounded-0">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control rounded-0">
-                </div>
+
+
+            <h2 class="h4 text-black mb-5">Thông Tin Mua Hàng</h2>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="fname">Họ và tên</label>
+                <input type="text" id="fname" class="form-control rounded-0">
               </div>
+            </div>
 
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control rounded-0">
-                </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="email">Số Điện Thoại</label>
+                <input type="number" id="phonenumber" class="form-control rounded-0">
               </div>
+            </div>
 
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control rounded-0">
-                </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="subject">Địa chỉ</label>
+                <input type="text" id="address" class="form-control rounded-0">
               </div>
+            </div>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Write your notes or questions here..."></textarea>
-                </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="subject">Số Lượng</label>
+                <input type="number" id="ordernumber" class="form-control rounded-0">
               </div>
+            </div>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-black rounded-0 py-3 px-4">
-                </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="message">Nội dung</label>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0"
+                  placeholder="Ghi chú..."></textarea>
               </div>
+            </div>
 
-  
-            </form>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <input id="buy" type="submit" value="Đặt Hàng" class="btn btn-black rounded-0 py-3 px-4">
+              </div>
+            </div>
+
+
+
           </div>
-        
+
         </div>
-        
+
       </div>
     </div>
 
-  
+
     <footer class="site-footer bg-white">
       <div class="container">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-8">
             <div class="row">
               <div class="col-md-5">
@@ -723,18 +565,19 @@
             <strong class="text-black mb-3 d-inline-block">$60.00</strong>
             <p><a href="#" class="btn btn-black rounded-0">Add to Cart</a></p>
           </div>
-        </div>
+        </div> -->
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
-            <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </footer>
@@ -754,9 +597,111 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-  
   <script src="js/main.js"></script>
-    
-  </body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+  <script>
+    var modal = document.getElementById("myModal");
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBEMfYw5XMGTmao7dXsdxrX_2WcgWZVzpY",
+      authDomain: "tinhchatnghe-4a3b5.firebaseapp.com",
+      databaseURL: "https://tinhchatnghe-4a3b5.firebaseio.com",
+      projectId: "tinhchatnghe-4a3b5",
+      storageBucket: "tinhchatnghe-4a3b5.appspot.com",
+      messagingSenderId: "800406119500",
+      appId: "1:800406119500:web:11f81eaceff6a5ef08c0e9",
+      measurementId: "G-P6RSDZC7FC"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    function writeData(name, phone, address, number, notes) {
+      var currentdate = new Date().toLocaleString();
+      currentdate = currentdate.replace(/\//g, '-');
+
+      firebase.database().ref('order/' + currentdate).set({
+        name: name,
+        phone: phone,
+        address: address,
+        number: number,
+        notes: notes
+      }).then(()=>{
+        swal("Hoàn Thành!", "Đơn hàng của bạn đã được đặt thành công!", "success");
+      });
+    }
+
+    $("#buy").click(function (e) {
+      e.preventDefault();
+      var name = $("#fname").val();
+      var phone = $("#phonenumber").val();
+      var address = $("#address").val();
+      var number = $("#ordernumber").val();
+      var notes = $("#message").val();
+
+      if (name === "") {
+        swal({
+          title: "Lỗi",
+          text: "Bạn chưa điền tên",
+          icon: "warning",
+          dangerMode: true
+        })
+
+        return;
+      }
+
+      if (phone === "") {
+        swal({
+          title: "Lỗi",
+          text: "Bạn chưa điền số điện thoại",
+          icon: "warning",
+          dangerMode: true
+        })
+
+        return;
+      }
+
+      if (address === "") {
+        swal({
+          title: "Lỗi",
+          text: "Bạn chưa điền địa chỉ",
+          icon: "warning",
+          dangerMode: true
+        })
+
+        return;
+      }
+
+      if (number === "") {
+        swal({
+          title: "Lỗi",
+          text: "Bạn chưa điền số lượng",
+          icon: "warning",
+          dangerMode: true
+        })
+
+        return;
+      }
+      writeData(name, phone, address, number, notes);
+    });
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  </script>
+
+</body>
+
 </html>
