@@ -1,2 +1,0 @@
-# tinhchatnghe
-tinh chất nghệ
