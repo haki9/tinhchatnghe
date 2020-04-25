@@ -20,6 +20,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
 
+  <link href="../images/favicon-96x96.png" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -80,8 +81,8 @@
     </header>
 
 
-    <div class="site-cover site-cover-sm same-height overlay single-page"
-      style="background-image: url('images/tinh-bot-nghe-vang-nguyen-chat.jpg');">
+    <div class="site-cover site-cover-sm same-height overlay single-page lazy"
+      data-src="images/tinh-bot-nghe-vang-nguyen-chat.jpg">
       <div class="container">
         <div class="row same-height justify-content-center">
           <div class="col-md-12 col-lg-10">
@@ -322,6 +323,14 @@
   <script>
     let images = document.querySelectorAll(".lazyload");
     new LazyLoad(images);
+  </script>
+
+  <!-- LAZY LOADING -->
+  <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+  <script>
+    $(function () {
+      $('.lazy').lazy();
+    });
   </script>
 
 </body>
